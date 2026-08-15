@@ -1,0 +1,8 @@
+read_verilog ../GOLD.v
+read_verilog ../GATE.v
+hierarchy -check
+proc; opt_clean
+miter -equiv -flatten -make_assert gold gate m
+hierarchy -top m
+flatten; opt -fast
+sat -prove-asserts -verify m

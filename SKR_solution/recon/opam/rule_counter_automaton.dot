@@ -1,0 +1,9 @@
+digraph A {
+  rankdir=LR; bgcolor="white"; nodesep=0.6; labelloc="b"; fontname="Helvetica"; fontsize=10;
+  label="\none such 2-bit counter per column (11) and per region (11); its watched positions p come from the position counter's addressing.\naccept iff state == 2 when p == 121   (0 = 00, 1 and 2 = the two mixed states, 3+ = 11, saturating)";
+  node [shape=circle, style=filled, fillcolor="#f4f4f4", fontname="Helvetica", fontsize=12, width=0.9, fixedsize=true, color="#555555"];
+  edge [fontname="Helvetica", fontsize=10, color="#555555"];
+  s0 [label="0"]; s1 [label="1"]; s2 [label="2", shape=doublecircle, fillcolor="#c8e8b8", penwidth=2]; s3 [label="3+", fillcolor="#f8d0d0"];
+  s0 -> s1 [label="I=1 at a\nwatched p"]; s1 -> s2 [label="I=1 at a\nwatched p"]; s2 -> s3 [label="I=1 at a\nwatched p"]; s3 -> s3 [label="I=1"];
+  s0 -> s0 [label="else hold"]; s1 -> s1 [label="hold"]; s2 -> s2 [label="hold"];
+}

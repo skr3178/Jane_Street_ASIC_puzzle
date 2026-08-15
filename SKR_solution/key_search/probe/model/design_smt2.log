@@ -1,0 +1,63 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+50 (git sha1 bf86dd7fa-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `harness'. Setting top module to harness.
+
+2.1. Analyzing design hierarchy..
+Top module:  \harness
+
+2.2. Analyzing design hierarchy..
+Top module:  \harness
+Removed 0 unused modules.
+Module harness directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== harness ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     2852 wires
+     2852 wire bits
+     2136 public wires
+     2136 public wire bits
+        2 ports
+        2 port bits
+     1983 cells
+      489   $_AND_
+      158   $_MUX_
+      180   $_NOT_
+      341   $_OR_
+       79   $anyinit
+        1   $assume
+        1   $cover
+        3   $ff
+        1   $mux
+        1   $not
+      729   $scopeinfo
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module harness.
+
+End of script. Logfile hash: 6852d21623, time: 0.01s, user: 0.01s, system: 0.01s, MEM: 20.75 MB peak
+Yosys 0.68+50 (git sha1 bf86dd7fa-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 47% 2x write_smt2 (0 sec), 38% 2x read_rtlil (0 sec), ...

@@ -1,0 +1,12 @@
+# running in probe/src/
+read_verilog -sv harness.sv
+read_verilog /home/skr/Downloads/tiny-gpu/asic-puzzle-2026/SKR_solution/extract/puzzle/extracted_puzzle.v
+read_liberty -wb -ignore_miss_dir -ignore_miss_func -ignore_miss_data_latch /home/skr/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+hierarchy -top harness
+flatten -wb
+opt_clean
+prep -top harness
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

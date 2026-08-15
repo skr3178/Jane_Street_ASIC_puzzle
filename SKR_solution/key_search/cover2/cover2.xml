@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-12T21:28:46" hostname="skr-B650M-Pro-RS-WiFi" package="cover2" id="0" name="default" tests="1" errors="0" failures="0" time="16" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<testcase classname="default" name="Property COVER in harness at harness2.sv:8.39-8.53" time="0" type="COVER" location="harness2.sv:8.39-8.53" id="_witness_.check_cover_harness2_sv_8_8" tracefile="engine_0/trace0.vcd">
+</testcase>
+<system-out>SBY 21:28:33 [cover2] Removing directory '/home/skr/Downloads/tiny-gpu/asic-puzzle-2026/SKR_solution/key_search/cover2'.
+SBY 21:28:33 [cover2] Copy '/home/skr/Downloads/tiny-gpu/asic-puzzle-2026/SKR_solution/key_search/harness2.sv' to '/home/skr/Downloads/tiny-gpu/asic-puzzle-2026/SKR_solution/key_search/cover2/src/harness2.sv'.
+SBY 21:28:33 [cover2] Copy '/home/skr/Downloads/tiny-gpu/asic-puzzle-2026/SKR_solution/extract/puzzle/extracted_puzzle.v' to '/home/skr/Downloads/tiny-gpu/asic-puzzle-2026/SKR_solution/key_search/cover2/src/extracted_puzzle.v'.
+SBY 21:28:33 [cover2] engine_0: smtbmc bitwuzla
+SBY 21:28:33 [cover2] base: starting process &quot;cd cover2/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 21:28:33 [cover2] base: Warning: Ignoring module harness because it contains processes (run 'proc' command first).
+SBY 21:28:33 [cover2] base: finished (returncode=0)
+SBY 21:28:33 [cover2] prep: starting process &quot;cd cover2/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 21:28:33 [cover2] prep: finished (returncode=0)
+SBY 21:28:33 [cover2] smt2: starting process &quot;cd cover2/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 21:28:33 [cover2] smt2: finished (returncode=0)
+SBY 21:28:33 [cover2] engine_0: starting process &quot;cd cover2; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 320  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 12..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 13..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 14..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 15..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 16..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 17..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 18..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 19..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 20..
+SBY 21:28:33 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 21..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 22..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 23..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 24..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 25..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 26..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 27..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 28..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 29..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 30..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 31..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 32..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 33..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 34..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 35..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 36..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 37..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 38..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 39..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 40..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 41..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 42..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 43..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 44..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 45..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 46..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 47..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 48..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 49..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 50..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 51..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 52..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 53..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:00  Checking cover reachability in step 54..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 55..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 56..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 57..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 58..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 59..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 60..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 61..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 62..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 63..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 64..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 65..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 66..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 67..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 68..
+SBY 21:28:34 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 69..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 70..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 71..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 72..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 73..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 74..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 75..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 76..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 77..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 78..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 79..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 80..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 81..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 82..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 83..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 84..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 85..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 86..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 87..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 88..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 89..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 90..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:01  Checking cover reachability in step 91..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 92..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 93..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 94..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 95..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 96..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 97..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 98..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 99..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 100..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 101..
+SBY 21:28:35 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 102..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 103..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 104..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 105..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 106..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 107..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 108..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 109..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 110..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 111..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 112..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 113..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 114..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 115..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 116..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 117..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 118..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:02  Checking cover reachability in step 119..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:03  Checking cover reachability in step 120..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:03  Checking cover reachability in step 121..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:03  Checking cover reachability in step 122..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:03  Checking cover reachability in step 123..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:03  Checking cover reachability in step 124..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:03  Checking cover reachability in step 125..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:03  Checking cover reachability in step 126..
+SBY 21:28:36 [cover2] engine_0: ##   0:00:03  Checking cover reachability in step 127..
+SBY 21:28:37 [cover2] engine_0: ##   0:00:03  Reached cover statement in step 127 at harness: harness2.sv:8.39-8.53 (_witness_.check_cover_harness2_sv_8_8)
+SBY 21:28:37 [cover2] engine_0: ##   0:00:03  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 21:28:45 [cover2] engine_0: ##   0:00:12  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 21:28:45 [cover2] engine_0: ##   0:00:12  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 21:28:45 [cover2] engine_0: ##   0:00:12  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 21:28:46 [cover2] engine_0: ##   0:00:12  Status: passed
+SBY 21:28:46 [cover2] engine_0: finished (returncode=0)
+SBY 21:28:46 [cover2] engine_0: Status returned by engine: pass
+SBY 21:28:46 [cover2] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:13 (13)
+SBY 21:28:46 [cover2] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:16 (16)
+SBY 21:28:46 [cover2] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 21:28:46 [cover2] summary: cover trace: cover2/engine_0/trace0.vcd
+SBY 21:28:46 [cover2] summary:   reached cover statement harness._witness_.check_cover_harness2_sv_8_8 at harness2.sv:8.39-8.53 step 127
+SBY 21:28:46 [cover2] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,39 @@
+digraph chip {
+  rankdir=LR; nodesep=0.35; ranksep=0.55; bgcolor="white";
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, fillcolor="#f4f4f4", color="#555555"];
+  edge [fontname="Helvetica", fontsize=9, color="#555555"];
+
+  I    [label="I\n(board bits, serial)", shape=plaintext, fillcolor=white];
+  en   [label="enable / rst_n", shape=plaintext, fillcolor=white];
+
+  subgraph cluster_ctrl { label="control"; style="rounded"; color="#cc3333"; fontname="Helvetica"; fontsize=11;
+    ctr [label="122-state position counter\n(9 flops, non-linear, saturating)\np = 0 … 121", fillcolor="#f8d0d0"];
+    done [label="done latch g__243\n(fires at p = 121)", fillcolor="#f8d0d0"];
+  }
+  subgraph cluster_rules { label="Star Battle rules"; style="rounded"; color="#3366cc"; fontname="Helvetica"; fontsize=11;
+    cols [label="11 column counters\n2-bit saturating 0/1/2/3+\nstep when p ≡ c (mod 11)", fillcolor="#cfe0f8"];
+    regs [label="11 region counters\n2-bit saturating 0/1/2/3+\nstep when p ∈ region_k", fillcolor="#cfe0f8"];
+    rows [label="row check\n2-bit row counter (g__258,g__259)\n+ sticky flag g__254", fillcolor="#cfe0f8"];
+    touch [label="no-touch check\n12-stage input delay line\n+ sticky flag g__205", fillcolor="#cfe0f8"];
+    pop [label="popcount\n8-bit ripple counter\nmust read 22", fillcolor="#cfe0f8"];
+  }
+  chk [label="accept AND-tree\nall counters == 2\n∧ no flags ∧ popcount == 22\n∧ p == 121", fillcolor="#d9f0d0"];
+  succ [label="success (g__197)\nself-holding", fillcolor="#c8e8b8", penwidth=2];
+  s248 [label="sibling latch g__248\n(counts OK, stars touch)", fillcolor="#e8f0e0"];
+
+  subgraph cluster_out { label="output generator (does not affect success)"; style="rounded"; color="#9966cc"; fontname="Helvetica"; fontsize=11;
+    idx [label="character index\n(4 flops)", fillcolor="#e6d8f4"];
+    scr [label="8-bit data scrambler\n(shifts each cycle)", fillcolor="#e6d8f4"];
+    rom [label="message select\n(* TWO STARS *) · TWO NOT TOUCH\nTRY AGAIN · EMPTY SKY · BIG BANG", fillcolor="#e6d8f4"];
+  }
+  O [label="O[7:0]\n(ASCII)", shape=plaintext, fillcolor=white];
+  S [label="success", shape=plaintext, fillcolor=white];
+
+  en -> ctr; ctr -> done;
+  I -> cols; I -> regs; I -> rows; I -> touch; I -> pop;
+  ctr -> cols [label="addresses"]; ctr -> regs [label="addresses"]; ctr -> rows [label="row boundary"];
+  cols -> chk; regs -> chk; rows -> chk; touch -> chk; pop -> chk; ctr -> chk;
+  chk -> succ; chk -> s248 [style=dashed];
+  done -> succ [label="hold"];
+  succ -> rom; s248 -> rom; pop -> rom [label="0 / all"]; done -> idx; idx -> rom; scr -> rom; rom -> O; succ -> S;
+}

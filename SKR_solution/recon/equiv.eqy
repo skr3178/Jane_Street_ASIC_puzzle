@@ -1,0 +1,27 @@
+# ============================================================================
+# equiv.eqy  --  Turnkey equivalence proof via `eqy` (Yosys equivalence wrapper)
+#   Run:  eqy -f equiv.eqy
+#   Result in:  equiv/  (PASS/FAIL + per-partition detail, equiv/status)
+# eqy auto-matches signals by name, partitions the design at matched registers,
+# and proves each partition independently (much more scalable than one big miter).
+# ============================================================================
+
+[options]
+depth 20
+
+[gold]
+read_verilog puzzle_behav.v
+prep -top puzzle
+
+[gate]
+read_verilog reconstructed.v
+prep -top puzzle_reconstructed
+
+[strategy sat]
+use sat
+depth 20
+
+[strategy induct]
+use smtbmc
+depth 20
+induction

@@ -1,0 +1,6 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+engine_0 (smtbmc bitwuzla) returned FAIL
+engine_0 did not produce any traces
+unreached cover statements:
+  harness._witness_.check_cover_harness_sv_7_3 at harness.sv:7.38-7.52

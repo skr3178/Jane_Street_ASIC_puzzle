@@ -1,0 +1,1181 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+50 (git sha1 bf86dd7fa-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `/tmp/claude-1000/-home-skr-Downloads-tiny-gpu/495b470e-9bc1-4e41-875b-9b1e1b030080/scratchpad/build_miter.ys' --
+
+1. Executing Verilog-2005 frontend: puzzle_behav.v
+Parsing Verilog input from `puzzle_behav.v' to AST representation.
+Generating RTLIL representation for module `\puzzle'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconstructed.v
+Parsing Verilog input from `reconstructed.v' to AST representation.
+Generating RTLIL representation for module `\puzzle_reconstructed'.
+reconstructed.v:206: Warning: Identifier `\g__567_X' is implicitly declared.
+reconstructed.v:206: Warning: Identifier `\g__552_X' is implicitly declared.
+reconstructed.v:206: Warning: Identifier `\g__573_X' is implicitly declared.
+reconstructed.v:206: Warning: Identifier `\g__555_X' is implicitly declared.
+reconstructed.v:206: Warning: Identifier `\g__556_X' is implicitly declared.
+reconstructed.v:206: Warning: Identifier `\g__557_X' is implicitly declared.
+reconstructed.v:206: Warning: Identifier `\g__554_X' is implicitly declared.
+reconstructed.v:206: Warning: Identifier `\g__570_X' is implicitly declared.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$reconstructed.v:209$70030 in module puzzle_reconstructed.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5826$1046 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5774$996 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5437$661 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5433$659 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5430$658 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5426$656 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5407$639 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5386$620 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5364$600 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5346$584 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5326$566 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5311$553 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5287$531 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5260$506 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5245$493 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5230$480 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5213$465 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5203$457 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5199$455 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5183$441 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5180$440 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5176$438 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5172$436 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5165$431 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5158$426 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5148$418 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5145$417 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5141$415 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5138$414 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5131$409 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5127$407 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5112$394 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5108$392 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5105$391 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5094$382 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5091$381 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5088$380 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5084$378 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5081$377 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5075$373 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5072$372 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5069$371 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5066$370 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5062$368 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5054$362 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5050$360 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5040$352 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5037$351 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5034$350 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5030$348 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5027$347 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5024$346 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5021$345 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5017$343 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5012$340 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5009$339 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5005$337 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:5002$336 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4998$334 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4994$332 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4990$330 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4987$329 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4984$328 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4981$327 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4974$322 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4971$321 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4968$320 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4965$319 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4962$318 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4959$317 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4956$316 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4952$314 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4946$310 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4940$306 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4936$304 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4932$302 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4928$300 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4925$299 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4922$298 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4918$296 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4914$294 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4910$292 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4906$290 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4893$279 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4874$262 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4621$11 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4617$9 in module puzzle.
+Marked 1 switch rules as full_case in process $proc$puzzle_behav.v:4613$7 in module puzzle.
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 176 redundant assignments.
+Promoted 4 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5826$1046'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5774$996'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5437$661'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5433$659'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5430$658'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5426$656'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5407$639'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5386$620'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5364$600'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5346$584'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5326$566'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5311$553'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5287$531'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5260$506'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5245$493'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5230$480'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5213$465'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5203$457'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5199$455'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5183$441'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5180$440'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5176$438'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5172$436'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5165$431'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5158$426'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5148$418'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5145$417'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5141$415'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5138$414'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5131$409'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5127$407'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5112$394'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5108$392'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5105$391'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5094$382'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5091$381'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5088$380'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5084$378'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5081$377'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5075$373'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5072$372'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5069$371'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5066$370'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5062$368'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5054$362'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5050$360'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5040$352'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5037$351'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5034$350'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5030$348'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5027$347'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5024$346'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5021$345'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5017$343'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5012$340'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5009$339'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5005$337'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:5002$336'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4998$334'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4994$332'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4990$330'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4987$329'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4984$328'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4981$327'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4974$322'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4971$321'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4968$320'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4965$319'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4962$318'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4959$317'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4956$316'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4952$314'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4946$310'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4940$306'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4936$304'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4932$302'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4928$300'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4925$299'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4922$298'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4918$296'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4914$294'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4910$292'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4906$290'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4893$279'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4874$262'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4621$11'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4617$9'.
+Found async reset \_0002_ in `\puzzle.$proc$puzzle_behav.v:4613$7'.
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~1 debug messages>
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+     1/92: $0\g__405[0:0]
+     2/92: $0\g__14[0:0]
+     3/92: $0\g__13[0:0]
+     4/92: $0\g__12[0:0]
+     5/92: $0\g__393[0:0]
+     6/92: $0\g__263[0:0]
+     7/92: $0\g__262[0:0]
+     8/92: $0\g__261[0:0]
+     9/92: $0\g__260[0:0]
+    10/92: $0\g__259[0:0]
+    11/92: $0\g__258[0:0]
+    12/92: $0\g__257[0:0]
+    13/92: $0\g__256[0:0]
+    14/92: $0\g__255[0:0]
+    15/92: $0\g__254[0:0]
+    16/92: $0\g__253[0:0]
+    17/92: $0\g__252[0:0]
+    18/92: $0\g__251[0:0]
+    19/92: $0\g__250[0:0]
+    20/92: $0\g__249[0:0]
+    21/92: $0\g__248[0:0]
+    22/92: $0\g__247[0:0]
+    23/92: $0\g__245[0:0]
+    24/92: $0\g__244[0:0]
+    25/92: $0\g__243[0:0]
+    26/92: $0\g__242[0:0]
+    27/92: $0\g__241[0:0]
+    28/92: $0\g__240[0:0]
+    29/92: $0\g__238[0:0]
+    30/92: $0\g__237[0:0]
+    31/92: $0\g__236[0:0]
+    32/92: $0\g__235[0:0]
+    33/92: $0\g__234[0:0]
+    34/92: $0\g__233[0:0]
+    35/92: $0\g__232[0:0]
+    36/92: $0\g__231[0:0]
+    37/92: $0\g__230[0:0]
+    38/92: $0\g__229[0:0]
+    39/92: $0\g__228[0:0]
+    40/92: $0\g__227[0:0]
+    41/92: $0\g__226[0:0]
+    42/92: $0\g__225[0:0]
+    43/92: $0\g__224[0:0]
+    44/92: $0\g__223[0:0]
+    45/92: $0\g__222[0:0]
+    46/92: $0\g__221[0:0]
+    47/92: $0\g__220[0:0]
+    48/92: $0\g__219[0:0]
+    49/92: $0\g__218[0:0]
+    50/92: $0\g__217[0:0]
+    51/92: $0\g__216[0:0]
+    52/92: $0\g__215[0:0]
+    53/92: $0\g__214[0:0]
+    54/92: $0\g__213[0:0]
+    55/92: $0\g__212[0:0]
+    56/92: $0\g__211[0:0]
+    57/92: $0\g__210[0:0]
+    58/92: $0\g__209[0:0]
+    59/92: $0\g__208[0:0]
+    60/92: $0\g__207[0:0]
+    61/92: $0\g__206[0:0]
+    62/92: $0\g__205[0:0]
+    63/92: $0\g__204[0:0]
+    64/92: $0\g__203[0:0]
+    65/92: $0\g__202[0:0]
+    66/92: $0\g__201[0:0]
+    67/92: $0\g__200[0:0]
+    68/92: $0\g__199[0:0]
+    69/92: $0\g__198[0:0]
+    70/92: $0\g__197[0:0]
+    71/92: $0\g__196[0:0]
+    72/92: $0\g__195[0:0]
+    73/92: $0\g__194[0:0]
+    74/92: $0\g__193[0:0]
+    75/92: $0\g__192[0:0]
+    76/92: $0\g__190[0:0]
+    77/92: $0\g__189[0:0]
+    78/92: $0\g__188[0:0]
+    79/92: $0\g__187[0:0]
+    80/92: $0\g__186[0:0]
+    81/92: $0\g__185[0:0]
+    82/92: $0\g__184[0:0]
+    83/92: $0\g__183[0:0]
+    84/92: $0\g__182[0:0]
+    85/92: $0\g__181[0:0]
+    86/92: $0\g__180[0:0]
+    87/92: $0\g__179[0:0]
+    88/92: $0\g__178[0:0]
+    89/92: $0\g__9[0:0]
+    90/92: $0\g__539[0:0]
+    91/92: $0\g__11[0:0]
+    92/92: $0\g__10[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:6454$1671'.
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:6270$1488'.
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5826$1046'.
+     1/1: $0\g__405.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5774$996'.
+     1/1: $0\g__393.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5437$661'.
+     1/1: $0\g__263.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5433$659'.
+     1/1: $0\g__262.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5430$658'.
+     1/1: $0\g__261.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5426$656'.
+     1/1: $0\g__260.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5407$639'.
+     1/1: $0\g__259.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5386$620'.
+     1/1: $0\g__258.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5364$600'.
+     1/1: $0\g__257.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5346$584'.
+     1/1: $0\g__256.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5326$566'.
+     1/1: $0\g__255.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5311$553'.
+     1/1: $0\g__254.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5287$531'.
+     1/1: $0\g__253.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5260$506'.
+     1/1: $0\g__252.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5245$493'.
+     1/1: $0\g__251.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5230$480'.
+     1/1: $0\g__250.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5213$465'.
+     1/1: $0\g__249.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5203$457'.
+     1/1: $0\g__248.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5199$455'.
+     1/1: $0\g__247.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5183$441'.
+     1/1: $0\g__245.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5180$440'.
+     1/1: $0\g__244.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5176$438'.
+     1/1: $0\g__243.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5172$436'.
+     1/1: $0\g__242.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5165$431'.
+     1/1: $0\g__241.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5158$426'.
+     1/1: $0\g__240.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5148$418'.
+     1/1: $0\g__238.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5145$417'.
+     1/1: $0\g__237.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5141$415'.
+     1/1: $0\g__236.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5138$414'.
+     1/1: $0\g__235.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5131$409'.
+     1/1: $0\g__234.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5127$407'.
+     1/1: $0\g__233.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5112$394'.
+     1/1: $0\g__232.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5108$392'.
+     1/1: $0\g__231.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5105$391'.
+     1/1: $0\g__230.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5094$382'.
+     1/1: $0\g__229.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5091$381'.
+     1/1: $0\g__228.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5088$380'.
+     1/1: $0\g__227.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5084$378'.
+     1/1: $0\g__226.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5081$377'.
+     1/1: $0\g__225.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5075$373'.
+     1/1: $0\g__224.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5072$372'.
+     1/1: $0\g__223.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5069$371'.
+     1/1: $0\g__222.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5066$370'.
+     1/1: $0\g__221.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5062$368'.
+     1/1: $0\g__220.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5054$362'.
+     1/1: $0\g__219.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5050$360'.
+     1/1: $0\g__218.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5040$352'.
+     1/1: $0\g__217.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5037$351'.
+     1/1: $0\g__216.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5034$350'.
+     1/1: $0\g__215.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5030$348'.
+     1/1: $0\g__214.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5027$347'.
+     1/1: $0\g__213.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5024$346'.
+     1/1: $0\g__212.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5021$345'.
+     1/1: $0\g__211.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5017$343'.
+     1/1: $0\g__210.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5012$340'.
+     1/1: $0\g__209.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5009$339'.
+     1/1: $0\g__208.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5005$337'.
+     1/1: $0\g__207.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:5002$336'.
+     1/1: $0\g__206.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4998$334'.
+     1/1: $0\g__205.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4994$332'.
+     1/1: $0\g__204.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4990$330'.
+     1/1: $0\g__203.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4987$329'.
+     1/1: $0\g__202.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4984$328'.
+     1/1: $0\g__201.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4981$327'.
+     1/1: $0\g__200.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4974$322'.
+     1/1: $0\g__199.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4971$321'.
+     1/1: $0\g__198.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4968$320'.
+     1/1: $0\g__197.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4965$319'.
+     1/1: $0\g__196.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4962$318'.
+     1/1: $0\g__195.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4959$317'.
+     1/1: $0\g__194.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4956$316'.
+     1/1: $0\g__193.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4952$314'.
+     1/1: $0\g__192.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4946$310'.
+     1/1: $0\g__190.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4940$306'.
+     1/1: $0\g__189.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4936$304'.
+     1/1: $0\g__188.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4932$302'.
+     1/1: $0\g__187.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4928$300'.
+     1/1: $0\g__186.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4925$299'.
+     1/1: $0\g__185.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4922$298'.
+     1/1: $0\g__184.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4918$296'.
+     1/1: $0\g__183.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4914$294'.
+     1/1: $0\g__182.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4910$292'.
+     1/1: $0\g__181.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4906$290'.
+     1/1: $0\g__180.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4893$279'.
+     1/1: $0\g__179.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4874$262'.
+     1/1: $0\g__178.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4621$11'.
+     1/1: $0\g__14.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4617$9'.
+     1/1: $0\g__13.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4613$7'.
+     1/1: $0\g__12.IQ[0:0]
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4610$5'.
+Creating decoders for process `\puzzle.$proc$puzzle_behav.v:4608$4'.
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\puzzle_reconstructed.\g__10' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70308' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__11' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70309' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__12' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70310' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__13' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70311' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__14' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70312' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__178' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70313' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__179' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70314' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__180' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70315' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__181' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70316' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__182' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70317' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__183' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70318' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__184' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70319' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__185' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70320' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__186' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70321' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__187' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70322' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__188' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70323' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__189' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70324' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__190' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70325' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__192' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70326' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__193' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70327' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__194' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70328' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__195' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70329' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__196' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70330' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__197' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70331' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__198' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70332' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__199' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70333' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__200' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70334' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__201' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70335' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__202' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70336' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__203' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70337' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__204' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70338' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__205' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70339' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__206' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70340' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__207' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70341' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__208' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70342' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__209' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70343' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__210' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70344' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__211' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70345' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__212' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70346' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__213' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70347' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__214' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70348' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__215' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70349' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__216' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70350' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__217' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70351' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__218' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70352' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__219' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70353' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__220' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70354' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__221' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70355' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__222' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70356' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__223' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70357' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__224' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70358' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__225' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70359' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__226' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70360' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__227' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70361' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__228' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70362' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__229' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70363' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__230' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70364' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__231' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70365' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__232' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70366' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__233' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70367' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__234' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70368' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__235' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70369' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__236' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70370' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__237' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70371' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__238' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70372' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__240' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70373' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__241' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70374' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__242' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70375' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__243' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70376' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__244' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70377' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__245' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70378' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__247' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70379' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__248' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70380' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__249' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70381' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__250' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70382' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__251' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70383' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__252' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70384' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__253' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70385' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__254' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70386' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__255' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70387' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__256' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70388' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__257' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70389' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__258' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70390' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__259' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70391' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__260' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70392' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__261' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70393' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__262' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70394' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__263' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70395' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__393' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70396' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__405' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70397' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__539' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70398' with positive edge clock.
+Creating register for signal `\puzzle_reconstructed.\g__9' using process `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+  created $dff cell `$procdff$70399' with positive edge clock.
+Creating register for signal `\puzzle.\g__284.A1' using process `\puzzle.$proc$puzzle_behav.v:6454$1671'.
+  created $dff cell `$procdff$70400' with positive edge clock.
+Creating register for signal `\puzzle.\g__174.D_N' using process `\puzzle.$proc$puzzle_behav.v:6270$1488'.
+  created $dff cell `$procdff$70401' with positive edge clock.
+Creating register for signal `\puzzle.\g__405.IQ' using process `\puzzle.$proc$puzzle_behav.v:5826$1046'.
+  created $adff cell `$procdff$70404' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__393.IQ' using process `\puzzle.$proc$puzzle_behav.v:5774$996'.
+  created $adff cell `$procdff$70407' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__263.IQ' using process `\puzzle.$proc$puzzle_behav.v:5437$661'.
+  created $adff cell `$procdff$70410' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__262.IQ' using process `\puzzle.$proc$puzzle_behav.v:5433$659'.
+  created $adff cell `$procdff$70413' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__261.IQ' using process `\puzzle.$proc$puzzle_behav.v:5430$658'.
+  created $adff cell `$procdff$70416' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__260.IQ' using process `\puzzle.$proc$puzzle_behav.v:5426$656'.
+  created $adff cell `$procdff$70419' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__259.IQ' using process `\puzzle.$proc$puzzle_behav.v:5407$639'.
+  created $adff cell `$procdff$70422' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__258.IQ' using process `\puzzle.$proc$puzzle_behav.v:5386$620'.
+  created $adff cell `$procdff$70425' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__257.IQ' using process `\puzzle.$proc$puzzle_behav.v:5364$600'.
+  created $adff cell `$procdff$70428' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__256.IQ' using process `\puzzle.$proc$puzzle_behav.v:5346$584'.
+  created $adff cell `$procdff$70431' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__255.IQ' using process `\puzzle.$proc$puzzle_behav.v:5326$566'.
+  created $adff cell `$procdff$70434' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__254.IQ' using process `\puzzle.$proc$puzzle_behav.v:5311$553'.
+  created $adff cell `$procdff$70437' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__253.IQ' using process `\puzzle.$proc$puzzle_behav.v:5287$531'.
+  created $adff cell `$procdff$70440' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__252.IQ' using process `\puzzle.$proc$puzzle_behav.v:5260$506'.
+  created $adff cell `$procdff$70443' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__251.IQ' using process `\puzzle.$proc$puzzle_behav.v:5245$493'.
+  created $adff cell `$procdff$70446' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__250.IQ' using process `\puzzle.$proc$puzzle_behav.v:5230$480'.
+  created $adff cell `$procdff$70449' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__249.IQ' using process `\puzzle.$proc$puzzle_behav.v:5213$465'.
+  created $adff cell `$procdff$70452' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__248.IQ' using process `\puzzle.$proc$puzzle_behav.v:5203$457'.
+  created $adff cell `$procdff$70455' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__247.IQ' using process `\puzzle.$proc$puzzle_behav.v:5199$455'.
+  created $adff cell `$procdff$70458' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__245.IQ' using process `\puzzle.$proc$puzzle_behav.v:5183$441'.
+  created $adff cell `$procdff$70461' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__244.IQ' using process `\puzzle.$proc$puzzle_behav.v:5180$440'.
+  created $adff cell `$procdff$70464' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__243.IQ' using process `\puzzle.$proc$puzzle_behav.v:5176$438'.
+  created $adff cell `$procdff$70467' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__242.IQ' using process `\puzzle.$proc$puzzle_behav.v:5172$436'.
+  created $adff cell `$procdff$70470' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__241.IQ' using process `\puzzle.$proc$puzzle_behav.v:5165$431'.
+  created $adff cell `$procdff$70473' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__240.IQ' using process `\puzzle.$proc$puzzle_behav.v:5158$426'.
+  created $adff cell `$procdff$70476' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__238.IQ' using process `\puzzle.$proc$puzzle_behav.v:5148$418'.
+  created $adff cell `$procdff$70479' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__237.IQ' using process `\puzzle.$proc$puzzle_behav.v:5145$417'.
+  created $adff cell `$procdff$70482' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__236.IQ' using process `\puzzle.$proc$puzzle_behav.v:5141$415'.
+  created $adff cell `$procdff$70485' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__235.IQ' using process `\puzzle.$proc$puzzle_behav.v:5138$414'.
+  created $adff cell `$procdff$70488' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__234.IQ' using process `\puzzle.$proc$puzzle_behav.v:5131$409'.
+  created $adff cell `$procdff$70491' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__233.IQ' using process `\puzzle.$proc$puzzle_behav.v:5127$407'.
+  created $adff cell `$procdff$70494' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__232.IQ' using process `\puzzle.$proc$puzzle_behav.v:5112$394'.
+  created $adff cell `$procdff$70497' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__231.IQ' using process `\puzzle.$proc$puzzle_behav.v:5108$392'.
+  created $adff cell `$procdff$70500' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__230.IQ' using process `\puzzle.$proc$puzzle_behav.v:5105$391'.
+  created $adff cell `$procdff$70503' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__229.IQ' using process `\puzzle.$proc$puzzle_behav.v:5094$382'.
+  created $adff cell `$procdff$70506' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__228.IQ' using process `\puzzle.$proc$puzzle_behav.v:5091$381'.
+  created $adff cell `$procdff$70509' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__227.IQ' using process `\puzzle.$proc$puzzle_behav.v:5088$380'.
+  created $adff cell `$procdff$70512' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__226.IQ' using process `\puzzle.$proc$puzzle_behav.v:5084$378'.
+  created $adff cell `$procdff$70515' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__225.IQ' using process `\puzzle.$proc$puzzle_behav.v:5081$377'.
+  created $adff cell `$procdff$70518' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__224.IQ' using process `\puzzle.$proc$puzzle_behav.v:5075$373'.
+  created $adff cell `$procdff$70521' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__223.IQ' using process `\puzzle.$proc$puzzle_behav.v:5072$372'.
+  created $adff cell `$procdff$70524' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__222.IQ' using process `\puzzle.$proc$puzzle_behav.v:5069$371'.
+  created $adff cell `$procdff$70527' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__221.IQ' using process `\puzzle.$proc$puzzle_behav.v:5066$370'.
+  created $adff cell `$procdff$70530' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__220.IQ' using process `\puzzle.$proc$puzzle_behav.v:5062$368'.
+  created $adff cell `$procdff$70533' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__219.IQ' using process `\puzzle.$proc$puzzle_behav.v:5054$362'.
+  created $adff cell `$procdff$70536' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__218.IQ' using process `\puzzle.$proc$puzzle_behav.v:5050$360'.
+  created $adff cell `$procdff$70539' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__217.IQ' using process `\puzzle.$proc$puzzle_behav.v:5040$352'.
+  created $adff cell `$procdff$70542' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__216.IQ' using process `\puzzle.$proc$puzzle_behav.v:5037$351'.
+  created $adff cell `$procdff$70545' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__215.IQ' using process `\puzzle.$proc$puzzle_behav.v:5034$350'.
+  created $adff cell `$procdff$70548' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__214.IQ' using process `\puzzle.$proc$puzzle_behav.v:5030$348'.
+  created $adff cell `$procdff$70551' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__213.IQ' using process `\puzzle.$proc$puzzle_behav.v:5027$347'.
+  created $adff cell `$procdff$70554' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__212.IQ' using process `\puzzle.$proc$puzzle_behav.v:5024$346'.
+  created $adff cell `$procdff$70557' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__211.IQ' using process `\puzzle.$proc$puzzle_behav.v:5021$345'.
+  created $adff cell `$procdff$70560' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__210.IQ' using process `\puzzle.$proc$puzzle_behav.v:5017$343'.
+  created $adff cell `$procdff$70563' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__209.IQ' using process `\puzzle.$proc$puzzle_behav.v:5012$340'.
+  created $adff cell `$procdff$70566' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__208.IQ' using process `\puzzle.$proc$puzzle_behav.v:5009$339'.
+  created $adff cell `$procdff$70569' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__207.IQ' using process `\puzzle.$proc$puzzle_behav.v:5005$337'.
+  created $adff cell `$procdff$70572' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__206.IQ' using process `\puzzle.$proc$puzzle_behav.v:5002$336'.
+  created $adff cell `$procdff$70575' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__205.IQ' using process `\puzzle.$proc$puzzle_behav.v:4998$334'.
+  created $adff cell `$procdff$70578' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__204.IQ' using process `\puzzle.$proc$puzzle_behav.v:4994$332'.
+  created $adff cell `$procdff$70581' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__203.IQ' using process `\puzzle.$proc$puzzle_behav.v:4990$330'.
+  created $adff cell `$procdff$70584' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__202.IQ' using process `\puzzle.$proc$puzzle_behav.v:4987$329'.
+  created $adff cell `$procdff$70587' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__201.IQ' using process `\puzzle.$proc$puzzle_behav.v:4984$328'.
+  created $adff cell `$procdff$70590' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__200.IQ' using process `\puzzle.$proc$puzzle_behav.v:4981$327'.
+  created $adff cell `$procdff$70593' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__199.IQ' using process `\puzzle.$proc$puzzle_behav.v:4974$322'.
+  created $adff cell `$procdff$70596' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__198.IQ' using process `\puzzle.$proc$puzzle_behav.v:4971$321'.
+  created $adff cell `$procdff$70599' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__197.IQ' using process `\puzzle.$proc$puzzle_behav.v:4968$320'.
+  created $adff cell `$procdff$70602' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__196.IQ' using process `\puzzle.$proc$puzzle_behav.v:4965$319'.
+  created $adff cell `$procdff$70605' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__195.IQ' using process `\puzzle.$proc$puzzle_behav.v:4962$318'.
+  created $adff cell `$procdff$70608' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__194.IQ' using process `\puzzle.$proc$puzzle_behav.v:4959$317'.
+  created $adff cell `$procdff$70611' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__193.IQ' using process `\puzzle.$proc$puzzle_behav.v:4956$316'.
+  created $adff cell `$procdff$70614' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__192.IQ' using process `\puzzle.$proc$puzzle_behav.v:4952$314'.
+  created $adff cell `$procdff$70617' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__190.IQ' using process `\puzzle.$proc$puzzle_behav.v:4946$310'.
+  created $adff cell `$procdff$70620' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__189.IQ' using process `\puzzle.$proc$puzzle_behav.v:4940$306'.
+  created $adff cell `$procdff$70623' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__188.IQ' using process `\puzzle.$proc$puzzle_behav.v:4936$304'.
+  created $adff cell `$procdff$70626' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__187.IQ' using process `\puzzle.$proc$puzzle_behav.v:4932$302'.
+  created $adff cell `$procdff$70629' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__186.IQ' using process `\puzzle.$proc$puzzle_behav.v:4928$300'.
+  created $adff cell `$procdff$70632' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__185.IQ' using process `\puzzle.$proc$puzzle_behav.v:4925$299'.
+  created $adff cell `$procdff$70635' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__184.IQ' using process `\puzzle.$proc$puzzle_behav.v:4922$298'.
+  created $adff cell `$procdff$70638' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__183.IQ' using process `\puzzle.$proc$puzzle_behav.v:4918$296'.
+  created $adff cell `$procdff$70641' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__182.IQ' using process `\puzzle.$proc$puzzle_behav.v:4914$294'.
+  created $adff cell `$procdff$70644' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__181.IQ' using process `\puzzle.$proc$puzzle_behav.v:4910$292'.
+  created $adff cell `$procdff$70647' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__180.IQ' using process `\puzzle.$proc$puzzle_behav.v:4906$290'.
+  created $adff cell `$procdff$70650' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__179.IQ' using process `\puzzle.$proc$puzzle_behav.v:4893$279'.
+  created $adff cell `$procdff$70653' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__178.IQ' using process `\puzzle.$proc$puzzle_behav.v:4874$262'.
+  created $adff cell `$procdff$70656' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__14.IQ' using process `\puzzle.$proc$puzzle_behav.v:4621$11'.
+  created $adff cell `$procdff$70659' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__13.IQ' using process `\puzzle.$proc$puzzle_behav.v:4617$9'.
+  created $adff cell `$procdff$70662' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__12.IQ' using process `\puzzle.$proc$puzzle_behav.v:4613$7'.
+  created $adff cell `$procdff$70665' with positive edge clock and positive level reset.
+Creating register for signal `\puzzle.\g__1778.A2' using process `\puzzle.$proc$puzzle_behav.v:4610$5'.
+  created $dff cell `$procdff$70666' with positive edge clock.
+Creating register for signal `\puzzle.\g__1731.A1' using process `\puzzle.$proc$puzzle_behav.v:4608$4'.
+  created $dff cell `$procdff$70667' with positive edge clock.
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+Removing empty process `puzzle_reconstructed.$proc$reconstructed.v:209$70030'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:6454$1671'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:6270$1488'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5826$1046'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5774$996'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5437$661'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5433$659'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5430$658'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5426$656'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5407$639'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5386$620'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5364$600'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5346$584'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5326$566'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5311$553'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5287$531'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5260$506'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5245$493'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5230$480'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5213$465'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5203$457'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5199$455'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5183$441'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5180$440'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5176$438'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5172$436'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5165$431'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5158$426'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5148$418'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5145$417'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5141$415'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5138$414'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5131$409'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5127$407'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5112$394'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5108$392'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5105$391'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5094$382'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5091$381'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5088$380'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5084$378'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5081$377'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5075$373'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5072$372'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5069$371'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5066$370'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5062$368'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5054$362'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5050$360'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5040$352'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5037$351'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5034$350'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5030$348'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5027$347'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5024$346'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5021$345'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5017$343'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5012$340'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5009$339'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5005$337'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:5002$336'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4998$334'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4994$332'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4990$330'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4987$329'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4984$328'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4981$327'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4974$322'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4971$321'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4968$320'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4965$319'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4962$318'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4959$317'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4956$316'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4952$314'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4946$310'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4940$306'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4936$304'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4932$302'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4928$300'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4925$299'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4922$298'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4918$296'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4914$294'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4910$292'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4906$290'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4893$279'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4874$262'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4621$11'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4617$9'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4613$7'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4610$5'.
+Removing empty process `puzzle.$proc$puzzle_behav.v:4608$4'.
+Cleaned up 1 empty switch.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module puzzle_reconstructed.
+<suppressed ~92 debug messages>
+Optimizing module puzzle.
+<suppressed ~176 debug messages>
+
+5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \puzzle_reconstructed..
+Finding unused cells or wires in module \puzzle..
+Removed 1096 unused cells and 3232 unused wires.
+<suppressed ~1124 debug messages>
+
+6. Executing MITER pass (creating miter circuit).
+Creating miter cell "miter" with gold cell "puzzle" and gate cell "puzzle_reconstructed".
+
+6.1. Executing FLATTEN pass (flatten design).
+<suppressed ~2 debug messages>
+
+6.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~5 debug messages>
+Removed 0 unused cells and 616 unused wires.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \miter
+
+7.2. Analyzing design hierarchy..
+Top module:  \miter
+Removing unused module `\puzzle_reconstructed'.
+Removing unused module `\puzzle'.
+Removed 2 unused modules.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+
+8. Executing FLATTEN pass (flatten design).
+
+9. Executing OPT pass (performing simple optimizations).
+
+9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 69125 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 60717 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 52387 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 44261 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 36609 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 29863 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 24523 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 20911 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 18900 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 18012 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 17725 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 17666 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Computing hashes of 17660 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+<suppressed ~154395 debug messages>
+Removed a total of 51465 cells.
+
+9.3. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $flatten\gate.$procdff$70337 ($dff) from module miter (D = \gate.nx_203, Q = \gate.g__203, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70317 ($dff) from module miter (D = \gate.nx_182, Q = \gate.g__182, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70330 ($dff) from module miter (D = \gate.nx_196, Q = \gate.g__196, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70338 ($dff) from module miter (D = \gate.nx_204, Q = \gate.g__204, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70339 ($dff) from module miter (D = \gate.nx_205, Q = \gate.g__205, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70336 ($dff) from module miter (D = \gate.nx_202, Q = \gate.g__202, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70393 ($dff) from module miter (D = \gate.nx_261, Q = \gate.g__261, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70341 ($dff) from module miter (D = \gate.nx_207, Q = \gate.g__207, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70390 ($dff) from module miter (D = \gate.nx_258, Q = \gate.g__258, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70343 ($dff) from module miter (D = \gate.nx_209, Q = \gate.g__209, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70331 ($dff) from module miter (D = \gate.chk_197, Q = \gate.g__197, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70344 ($dff) from module miter (D = \gate.nx_210, Q = \gate.g__210, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70394 ($dff) from module miter (D = \gate.nx_262, Q = \gate.g__262, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70345 ($dff) from module miter (D = \gate.nx_211, Q = \gate.g__211, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70333 ($dff) from module miter (D = \gate.nx_199, Q = \gate.g__199, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70325 ($dff) from module miter (D = \gate.nx_190, Q = \gate.g__190, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70346 ($dff) from module miter (D = \gate.nx_212, Q = \gate.g__212, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70347 ($dff) from module miter (D = \gate.nx_213, Q = \gate.g__213, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70348 ($dff) from module miter (D = \gate.nx_214, Q = \gate.g__214, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70319 ($dff) from module miter (D = \gate.nx_184, Q = \gate.g__184, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70349 ($dff) from module miter (D = \gate.nx_215, Q = \gate.g__215, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70350 ($dff) from module miter (D = \gate.nx_216, Q = \gate.g__216, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70395 ($dff) from module miter (D = \gate.nx_263, Q = \gate.g__263, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70321 ($dff) from module miter (D = \gate.nx_186, Q = \gate.g__186, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70351 ($dff) from module miter (D = \gate.nx_217, Q = \gate.g__217, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70352 ($dff) from module miter (D = \gate.nx_218, Q = \gate.g__218, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70353 ($dff) from module miter (D = \gate.nx_219, Q = \gate.g__219, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70354 ($dff) from module miter (D = \gate.nx_220, Q = \gate.g__220, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70396 ($dff) from module miter (D = \gate.nx_393, Q = \gate.g__393, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70355 ($dff) from module miter (D = \gate.nx_221, Q = \gate.g__221, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70324 ($dff) from module miter (D = \gate.nx_189, Q = \gate.g__189, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70356 ($dff) from module miter (D = \gate.nx_222, Q = \gate.g__222, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70357 ($dff) from module miter (D = \gate.nx_223, Q = \gate.g__223, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70391 ($dff) from module miter (D = \gate.nx_259, Q = \gate.g__259, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70358 ($dff) from module miter (D = \gate.nx_224, Q = \gate.g__224, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70332 ($dff) from module miter (D = \gate.nx_198, Q = \gate.g__198, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70359 ($dff) from module miter (D = \gate.nx_225, Q = \gate.g__225, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70389 ($dff) from module miter (D = \gate.nx_257, Q = \gate.g__257, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70360 ($dff) from module miter (D = \gate.nx_226, Q = \gate.g__226, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70392 ($dff) from module miter (D = \gate.nx_260, Q = \gate.g__260, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70326 ($dff) from module miter (D = \gate.nx_192, Q = \gate.g__192, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70362 ($dff) from module miter (D = \gate.nx_228, Q = \gate.g__228, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70363 ($dff) from module miter (D = \gate.nx_229, Q = \gate.g__229, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70364 ($dff) from module miter (D = \gate.nx_230, Q = \gate.g__230, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70365 ($dff) from module miter (D = \gate.nx_231, Q = \gate.g__231, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70366 ($dff) from module miter (D = \gate.nx_232, Q = \gate.g__232, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70318 ($dff) from module miter (D = \gate.nx_183, Q = \gate.g__183, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70367 ($dff) from module miter (D = \gate.nx_233, Q = \gate.g__233, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70368 ($dff) from module miter (D = \gate.nx_234, Q = \gate.g__234, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70313 ($dff) from module miter (D = \gate.nx_178, Q = \gate.g__178, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70369 ($dff) from module miter (D = \gate.nx_235, Q = \gate.g__235, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70328 ($dff) from module miter (D = \gate.nx_194, Q = \gate.g__194, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70335 ($dff) from module miter (D = \gate.nx_201, Q = \gate.g__201, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70370 ($dff) from module miter (D = \gate.nx_236, Q = \gate.g__236, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70334 ($dff) from module miter (D = \gate.nx_200, Q = \gate.g__200, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70371 ($dff) from module miter (D = \gate.nx_237, Q = \gate.g__237, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70329 ($dff) from module miter (D = \gate.nx_195, Q = \gate.g__195, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70372 ($dff) from module miter (D = \gate.nx_238, Q = \gate.g__238, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70373 ($dff) from module miter (D = \gate.nx_240, Q = \gate.g__240, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70314 ($dff) from module miter (D = \gate.nx_179, Q = \gate.g__179, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70323 ($dff) from module miter (D = \gate.nx_188, Q = \gate.g__188, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70374 ($dff) from module miter (D = \gate.nx_241, Q = \gate.g__241, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70375 ($dff) from module miter (D = \gate.nx_242, Q = \gate.g__242, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70376 ($dff) from module miter (D = \gate.nx_243, Q = \gate.g__243, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70315 ($dff) from module miter (D = \gate.nx_180, Q = \gate.g__180, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70377 ($dff) from module miter (D = \gate.nx_244, Q = \gate.g__244, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70322 ($dff) from module miter (D = \gate.nx_187, Q = \gate.g__187, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70327 ($dff) from module miter (D = \gate.nx_193, Q = \gate.g__193, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70378 ($dff) from module miter (D = \gate.nx_245, Q = \gate.g__245, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70379 ($dff) from module miter (D = \gate.nx_247, Q = \gate.g__247, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70381 ($dff) from module miter (D = \gate.nx_249, Q = \gate.g__249, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70382 ($dff) from module miter (D = \gate.nx_250, Q = \gate.g__250, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70383 ($dff) from module miter (D = \gate.nx_251, Q = \gate.g__251, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70316 ($dff) from module miter (D = \gate.nx_181, Q = \gate.g__181, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70384 ($dff) from module miter (D = \gate.nx_252, Q = \gate.g__252, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70320 ($dff) from module miter (D = \gate.nx_185, Q = \gate.g__185, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70385 ($dff) from module miter (D = \gate.nx_253, Q = \gate.g__253, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70386 ($dff) from module miter (D = \gate.nx_254, Q = \gate.g__254, rval = 1'0).
+Adding SRST signal on $flatten\gate.$procdff$70387 ($dff) from module miter (D = \gate.nx_255, Q = \gate.g__255, rval = 1'0).
+
+9.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 79 unused cells and 51544 unused wires.
+<suppressed ~80 debug messages>
+
+9.5. Rerunning OPT passes. (Removed registers in this run.)
+
+9.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+
+9.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\miter'.
+Computing hashes of 17581 cells of `\miter'.
+Finding duplicate cells in `\miter'.
+Removed a total of 0 cells.
+
+9.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+
+9.10. Finished fast OPT passes.
+
+10. Printing statistics.
+
+=== miter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+    19896 wires
+    19924 wire bits
+     4245 public wires
+     4273 public wire bits
+        5 ports
+        5 port bits
+    17581 cells
+       88   $adff
+     8151   $and
+        1   $assert
+        4   $dff
+        2   $eqx
+      287   $not
+      536   $or
+        1   $reduce_and
+        2   $scopeinfo
+       79   $sdff
+     8430   $xor
+
+11. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+ERROR: No SAT model available for async FF cell $flatten\gold.$procdff$70536 ($adff).  Consider running `async2sync` or `clk2fflogic` first.

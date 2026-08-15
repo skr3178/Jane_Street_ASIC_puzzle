@@ -1,0 +1,6 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:13 (13)
+Elapsed process time [H:MM:SS (secs)]: 0:00:16 (16)
+engine_0 (smtbmc bitwuzla) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement harness._witness_.check_cover_harness_sv_7_3 at harness.sv:7.38-7.52 step 124

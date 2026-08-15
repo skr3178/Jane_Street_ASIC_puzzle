@@ -1,0 +1,32 @@
+digraph "adder_demo" {
+rankdir="LR";
+remincross=true;
+n1 [ shape=diamond, label="clknet_1_1__leaf_clk", color="black", fontcolor="black"];
+n2 [ shape=diamond, label="sr_a/_01_", color="black", fontcolor="black"];
+n3 [ shape=diamond, label="sr_a/_00_", color="black", fontcolor="black"];
+n4 [ shape=diamond, label="a_reg[1]", color="black", fontcolor="black"];
+n5 [ shape=diamond, label="a_reg[0]", color="black", fontcolor="black"];
+n6 [ shape=octagon, label="rst_n", color="black", fontcolor="black"];
+n7 [ shape=octagon, label="en", color="black", fontcolor="black"];
+n8 [ shape=octagon, label="A", color="black", fontcolor="black"];
+c13 [ shape=record, label="{{<p9> CLK|<p10> D|<p11> RESET_B}|sr_a/_17_\nsky130_fd_sc_hd__dfrtp_2|{<p12> Q}}",  ];
+c14 [ shape=record, label="{{<p9> CLK|<p10> D|<p11> RESET_B}|sr_a/_16_\nsky130_fd_sc_hd__dfrtp_2|{<p12> Q}}",  ];
+c19 [ shape=record, label="{{<p15> A0|<p16> A1|<p17> S}|sr_a/_09_\nsky130_fd_sc_hd__mux2_1|{<p18> X}}",  ];
+c20 [ shape=record, label="{{<p15> A0|<p16> A1|<p17> S}|sr_a/_08_\nsky130_fd_sc_hd__mux2_1|{<p18> X}}",  ];
+n1:e -> c13:p9:w [colorscheme="dark28", color="8", fontcolor="8", label=""];
+n1:e -> c14:p9:w [colorscheme="dark28", color="8", fontcolor="8", label=""];
+c19:p18:e -> n2:w [colorscheme="dark28", color="4", fontcolor="4", label=""];
+n2:e -> c13:p10:w [colorscheme="dark28", color="4", fontcolor="4", label=""];
+c20:p18:e -> n3:w [colorscheme="dark28", color="6", fontcolor="6", label=""];
+n3:e -> c14:p10:w [colorscheme="dark28", color="6", fontcolor="6", label=""];
+c13:p12:e -> n4:w [colorscheme="dark28", color="5", fontcolor="5", label=""];
+n4:e -> c19:p15:w [colorscheme="dark28", color="5", fontcolor="5", label=""];
+c14:p12:e -> n5:w [colorscheme="dark28", color="2", fontcolor="2", label=""];
+n5:e -> c19:p16:w [colorscheme="dark28", color="2", fontcolor="2", label=""];
+n5:e -> c20:p15:w [colorscheme="dark28", color="2", fontcolor="2", label=""];
+n6:e -> c13:p11:w [colorscheme="dark28", color="8", fontcolor="8", label=""];
+n6:e -> c14:p11:w [colorscheme="dark28", color="8", fontcolor="8", label=""];
+n7:e -> c19:p17:w [colorscheme="dark28", color="3", fontcolor="3", label=""];
+n7:e -> c20:p17:w [colorscheme="dark28", color="3", fontcolor="3", label=""];
+n8:e -> c20:p16:w [colorscheme="dark28", color="1", fontcolor="1", label=""];
+}

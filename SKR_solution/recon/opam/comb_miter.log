@@ -1,0 +1,155 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+50 (git sha1 bf86dd7fa-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `/tmp/claude-1000/-home-skr-Downloads-tiny-gpu/8a0eba79-7d68-4882-835f-5e1945a18812/scratchpad/comb_miter.ys' --
+
+1. Executing Verilog-2005 frontend: recon/GOLD.v
+Parsing Verilog input from `recon/GOLD.v' to AST representation.
+Generating RTLIL representation for module `\gold'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: recon/GATE.v
+Parsing Verilog input from `recon/GATE.v' to AST representation.
+Generating RTLIL representation for module `\gate'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gate.
+Optimizing module gold.
+
+5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \gate..
+Finding unused cells or wires in module \gold..
+Removed 463 unused cells and 7306 unused wires.
+<suppressed ~4842 debug messages>
+
+6. Executing MITER pass (creating miter circuit).
+Creating miter cell "m" with gold cell "gold" and gate cell "gate".
+
+6.1. Executing FLATTEN pass (flatten design).
+<suppressed ~2 debug messages>
+
+6.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module m.
+Removed 0 unused cells and 513 unused wires.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \m
+
+7.2. Analyzing design hierarchy..
+Top module:  \m
+Removing unused module `\gate'.
+Removing unused module `\gold'.
+Removed 2 unused modules.
+Module m directly or indirectly contains formal properties -> setting "keep" attribute.
+
+8. Executing FLATTEN pass (flatten design).
+
+9. Executing OPT pass (performing simple optimizations).
+
+9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module m.
+
+9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\m'.
+Computing hashes of 69478 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 60855 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 52370 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 44141 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 36416 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 29601 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 24215 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 20580 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 18569 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 17681 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 17394 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 17335 cells of `\m'.
+Finding duplicate cells in `\m'.
+Computing hashes of 17329 cells of `\m'.
+Finding duplicate cells in `\m'.
+<suppressed ~156447 debug messages>
+Removed a total of 52149 cells.
+
+9.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \m..
+Removed 0 unused cells and 52149 unused wires.
+<suppressed ~1 debug messages>
+
+9.5. Finished fast OPT passes.
+
+10. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up SAT problem:
+Final constraint equation: { } = { }
+Imported 17329 cells to SAT database.
+Import proof for assert: $auto$miter.cc:268:create_miter_equiv$70028 when 1'1.
+
+Solving problem with 104025 variables and 277233 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+
+End of script. Logfile hash: ed40e16147, time: 20.24s, user: 21.29s, system: 0.29s, MEM: 405.53 MB peak
+Yosys 0.68+50 (git sha1 bf86dd7fa-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 76% 4x read_verilog (16 sec), 12% 1x sat (2 sec), ...

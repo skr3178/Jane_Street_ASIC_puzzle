@@ -1,0 +1,31 @@
+# ============================================================================
+# equiv_miter.ys  --  Sequential equivalence check
+#   gold = puzzle_behav.v          (behavioralized gate netlist, the reference)
+#   gate = reconstructed.v         (source-level reconstruction, puzzle_reconstructed)
+# Proves: for every reachable state and every input, O[7:0] and success match
+#         cycle-for-cycle.  Same ports, same clock, same reset semantics.
+# Run:  yosys -ql equiv_miter.log equiv_miter.ys
+# ============================================================================
+
+read_verilog puzzle_behav.v
+read_verilog reconstructed.v
+hierarchy -check
+
+# lower always/if into $dff/$mux, keep it word-level
+proc
+opt_clean
+
+# Build a miter: shared inputs, XOR the outputs, assert they are equal.
+# miter matches the two modules' ports BY NAME (order/encoding-agnostic).
+miter -equiv -flatten -make_assert puzzle puzzle_reconstructed miter
+hierarchy -top miter
+flatten
+opt -fast
+
+# ---- (1) Bounded model check from reset: fast smoke test / counterexample hunt.
+#      Writes trace.vcd if it finds a mismatch within 60 cycles.
+sat -seq 60 -prove-asserts -show-inputs -show-outputs -dump_vcd trace.vcd miter
+
+# ---- (2) Unbounded proof via temporal induction: the definitive SEC.
+#      -verify makes yosys exit non-zero if it cannot prove equivalence.
+sat -tempinduct -prove-asserts -verify miter

@@ -1,0 +1,152 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+50 (git sha1 bf86dd7fa-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module harness.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+Replacing harness.$flatten\dut.\g__178.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__178.D, Q=\dut.g__178.IQ
+Replacing harness.$flatten\dut.\g__179.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__179.D, Q=\dut.g__179.IQ
+Replacing harness.$flatten\dut.\g__180.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__180.D, Q=\dut.g__180.IQ
+Replacing harness.$flatten\dut.\g__181.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__181.D, Q=\dut.g__181.IQ
+Replacing harness.$flatten\dut.\g__182.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__182.D, Q=\dut.g__182.IQ
+Replacing harness.$flatten\dut.\g__183.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__183.D, Q=\dut.g__183.IQ
+Replacing harness.$flatten\dut.\g__184.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__184.D, Q=\dut.g__184.IQ
+Replacing harness.$flatten\dut.\g__185.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__185.D, Q=\dut.g__185.IQ
+Replacing harness.$flatten\dut.\g__186.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__186.D, Q=\dut.g__186.IQ
+Replacing harness.$flatten\dut.\g__187.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__187.D, Q=\dut.g__187.IQ
+Replacing harness.$flatten\dut.\g__188.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__188.D, Q=\dut.g__188.IQ
+Replacing harness.$flatten\dut.\g__189.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__189.D, Q=\dut.g__189.IQ
+Replacing harness.$flatten\dut.\g__190.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__190.D, Q=\dut.g__190.IQ
+Replacing harness.$flatten\dut.\g__192.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__192.D, Q=\dut.g__192.IQ
+Replacing harness.$flatten\dut.\g__193.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__193.D, Q=\dut.g__193.IQ
+Replacing harness.$flatten\dut.\g__194.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__194.D, Q=\dut.g__194.IQ
+Replacing harness.$flatten\dut.\g__195.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__195.D, Q=\dut.g__195.IQ
+Replacing harness.$flatten\dut.\g__196.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__196.D, Q=\dut.g__196.IQ
+Replacing harness.$flatten\dut.\g__197.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__197.D, Q=\dut.g__197.IQ
+Replacing harness.$flatten\dut.\g__198.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__198.D, Q=\dut.g__198.IQ
+Replacing harness.$flatten\dut.\g__199.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__199.D, Q=\dut.g__199.IQ
+Replacing harness.$flatten\dut.\g__200.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__200.D, Q=\dut.g__200.IQ
+Replacing harness.$flatten\dut.\g__201.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__201.D, Q=\dut.g__201.IQ
+Replacing harness.$flatten\dut.\g__202.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__202.D, Q=\dut.g__202.IQ
+Replacing harness.$flatten\dut.\g__203.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__203.D, Q=\dut.g__203.IQ
+Replacing harness.$flatten\dut.\g__204.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__204.D, Q=\dut.g__204.IQ
+Replacing harness.$flatten\dut.\g__205.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__205.D, Q=\dut.g__205.IQ
+Replacing harness.$flatten\dut.\g__207.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__207.D, Q=\dut.g__207.IQ
+Replacing harness.$flatten\dut.\g__209.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__209.D, Q=\dut.g__209.IQ
+Replacing harness.$flatten\dut.\g__210.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__210.D, Q=\dut.g__210.IQ
+Replacing harness.$flatten\dut.\g__211.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__211.D, Q=\dut.g__211.IQ
+Replacing harness.$flatten\dut.\g__212.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__212.D, Q=\dut.g__212.IQ
+Replacing harness.$flatten\dut.\g__213.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__213.D, Q=\dut.g__213.IQ
+Replacing harness.$flatten\dut.\g__214.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__214.D, Q=\dut.g__214.IQ
+Replacing harness.$flatten\dut.\g__215.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__215.D, Q=\dut.g__215.IQ
+Replacing harness.$flatten\dut.\g__216.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__216.D, Q=\dut.g__216.IQ
+Replacing harness.$flatten\dut.\g__217.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__217.D, Q=\dut.g__217.IQ
+Replacing harness.$flatten\dut.\g__218.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__218.D, Q=\dut.g__218.IQ
+Replacing harness.$flatten\dut.\g__219.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__219.D, Q=\dut.g__219.IQ
+Replacing harness.$flatten\dut.\g__220.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__220.D, Q=\dut.g__220.IQ
+Replacing harness.$flatten\dut.\g__221.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__221.D, Q=\dut.g__221.IQ
+Replacing harness.$flatten\dut.\g__222.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__222.D, Q=\dut.g__222.IQ
+Replacing harness.$flatten\dut.\g__223.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__223.D, Q=\dut.g__223.IQ
+Replacing harness.$flatten\dut.\g__224.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__224.D, Q=\dut.g__224.IQ
+Replacing harness.$flatten\dut.\g__225.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__225.D, Q=\dut.g__225.IQ
+Replacing harness.$flatten\dut.\g__226.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__226.D, Q=\dut.g__226.IQ
+Replacing harness.$flatten\dut.\g__228.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__228.D, Q=\dut.g__228.IQ
+Replacing harness.$flatten\dut.\g__229.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__229.D, Q=\dut.g__229.IQ
+Replacing harness.$flatten\dut.\g__230.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__230.D, Q=\dut.g__230.IQ
+Replacing harness.$flatten\dut.\g__231.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__231.D, Q=\dut.g__231.IQ
+Replacing harness.$flatten\dut.\g__232.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__232.D, Q=\dut.g__232.IQ
+Replacing harness.$flatten\dut.\g__233.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__233.D, Q=\dut.g__233.IQ
+Replacing harness.$flatten\dut.\g__234.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__234.D, Q=\dut.g__234.IQ
+Replacing harness.$flatten\dut.\g__235.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__235.D, Q=\dut.g__235.IQ
+Replacing harness.$flatten\dut.\g__236.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__236.D, Q=\dut.g__236.IQ
+Replacing harness.$flatten\dut.\g__237.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__237.D, Q=\dut.g__237.IQ
+Replacing harness.$flatten\dut.\g__238.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__238.D, Q=\dut.g__238.IQ
+Replacing harness.$flatten\dut.\g__240.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__240.D, Q=\dut.g__240.IQ
+Replacing harness.$flatten\dut.\g__241.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__241.D, Q=\dut.g__241.IQ
+Replacing harness.$flatten\dut.\g__242.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__242.D, Q=\dut.g__242.IQ
+Replacing harness.$flatten\dut.\g__243.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__243.D, Q=\dut.g__243.IQ
+Replacing harness.$flatten\dut.\g__244.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__244.D, Q=\dut.g__244.IQ
+Replacing harness.$flatten\dut.\g__245.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__245.D, Q=\dut.g__245.IQ
+Replacing harness.$flatten\dut.\g__247.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__247.D, Q=\dut.g__247.IQ
+Replacing harness.$flatten\dut.\g__249.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__249.D, Q=\dut.g__249.IQ
+Replacing harness.$flatten\dut.\g__250.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__250.D, Q=\dut.g__250.IQ
+Replacing harness.$flatten\dut.\g__251.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__251.D, Q=\dut.g__251.IQ
+Replacing harness.$flatten\dut.\g__252.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__252.D, Q=\dut.g__252.IQ
+Replacing harness.$flatten\dut.\g__253.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__253.D, Q=\dut.g__253.IQ
+Replacing harness.$flatten\dut.\g__254.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__254.D, Q=\dut.g__254.IQ
+Replacing harness.$flatten\dut.\g__255.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__255.D, Q=\dut.g__255.IQ
+Replacing harness.$flatten\dut.\g__257.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__257.D, Q=\dut.g__257.IQ
+Replacing harness.$flatten\dut.\g__258.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__258.D, Q=\dut.g__258.IQ
+Replacing harness.$flatten\dut.\g__259.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__259.D, Q=\dut.g__259.IQ
+Replacing harness.$flatten\dut.\g__260.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__260.D, Q=\dut.g__260.IQ
+Replacing harness.$flatten\dut.\g__261.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__261.D, Q=\dut.g__261.IQ
+Replacing harness.$flatten\dut.\g__262.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__262.D, Q=\dut.g__262.IQ
+Replacing harness.$flatten\dut.\g__263.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__263.D, Q=\dut.g__263.IQ
+Replacing harness.$flatten\dut.\g__393.$auto$liberty.cc:242:create_ff$1500 ($_DFF_PP0_): ARST=$flatten\dut.\g__178.$auto$rtlil.cc:3504:NotGate$1499, D=\dut.g__393.D, Q=\dut.g__393.IQ
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \harness..
+Removed 2 unused cells and 2 unused wires.
+<suppressed ~3 debug messages>
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \harness..
+Removed 1 unused cells and 1 unused wires.
+<suppressed ~2 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module harness...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module harness.
+<suppressed ~158 debug messages>
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\harness'.
+Computing hashes of 1982 cells of `\harness'.
+Finding duplicate cells in `\harness'.
+Removed a total of 0 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \harness..
+Removed 1 unused cells and 1 unused wires.
+<suppressed ~2 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \harness..
+Removed 0 unused cells and 79 unused wires.
+<suppressed ~1 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: e716f03917, time: 0.03s, user: 0.03s, system: 0.01s, MEM: 20.97 MB peak
+Yosys 0.68+50 (git sha1 bf86dd7fa-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Time spent: 43% 4x opt_clean (0 sec), 11% 2x read_rtlil (0 sec), ...
